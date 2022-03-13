@@ -1,0 +1,158 @@
+@startuml
+set namespaceSeparator ::
+scale 1024 width
+scale 768 height
+left to right direction
+
+class "polsl_nsi_engineering_thesis::Application.dart::Application" {
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::StatelessWidget" <|-- "polsl_nsi_engineering_thesis::Application.dart::Application"
+
+class "polsl_nsi_engineering_thesis::helper::curl.dart::Curl" {
+  +Future<String> createCurl()
+  {static} +Future<void> dataLoader()
+  +Future<dynamic> sendReceive()
+}
+
+class "polsl_nsi_engineering_thesis::object::Humidity.dart::Humidity" {
+}
+
+"polsl_nsi_engineering_thesis::object::Sensor.dart::Sensor" <|-- "polsl_nsi_engineering_thesis::object::Humidity.dart::Humidity"
+
+class "polsl_nsi_engineering_thesis::object::Moisture.dart::Moisture" {
+  +List<Map<String, String>> ranges
+}
+
+"polsl_nsi_engineering_thesis::object::Sensor.dart::Sensor" <|-- "polsl_nsi_engineering_thesis::object::Moisture.dart::Moisture"
+
+class "polsl_nsi_engineering_thesis::object::Pump.dart::Pump" {
+  +bool aviable
+  +bool working
+  +bool auto
+  +double autoMin
+  +double autoMax
+}
+
+abstract class "polsl_nsi_engineering_thesis::object::Sensor.dart::Sensor" {
+  +bool aviable
+  +double value
+  +double min
+  +double max
+  +double getPercentage()
+}
+
+class "polsl_nsi_engineering_thesis::object::Temperature.dart::Temperature" {
+}
+
+"polsl_nsi_engineering_thesis::object::Sensor.dart::Sensor" <|-- "polsl_nsi_engineering_thesis::object::Temperature.dart::Temperature"
+
+class "polsl_nsi_engineering_thesis::widget::AboutAuthorWidget.dart::AboutAuthorWidget" {
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::StatelessWidget" <|-- "polsl_nsi_engineering_thesis::widget::AboutAuthorWidget.dart::AboutAuthorWidget"
+
+class "polsl_nsi_engineering_thesis::widget::AutoPumpWidget.dart::AutoPumpWidget" {
+  +String device
+  +State<AutoPumpWidget> createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "polsl_nsi_engineering_thesis::widget::AutoPumpWidget.dart::AutoPumpWidget"
+
+class "polsl_nsi_engineering_thesis::widget::AutoPumpWidget.dart::_AutoPumpWidgetState" {
+  -Curl _curl
+  -Pump _pump
+  -RangeLabels _rangeLabels
+  +void initState()
+  +void deactivate()
+  +void dispose()
+  +void pumpGetCallback()
+  +Widget build()
+}
+
+"polsl_nsi_engineering_thesis::widget::AutoPumpWidget.dart::_AutoPumpWidgetState" o-- "polsl_nsi_engineering_thesis::helper::curl.dart::Curl"
+"polsl_nsi_engineering_thesis::widget::AutoPumpWidget.dart::_AutoPumpWidgetState" o-- "polsl_nsi_engineering_thesis::object::Pump.dart::Pump"
+"polsl_nsi_engineering_thesis::widget::AutoPumpWidget.dart::_AutoPumpWidgetState" o-- "flutter::src::material::slider_theme.dart::RangeLabels"
+"flutter::src::widgets::framework.dart::State" <|-- "polsl_nsi_engineering_thesis::widget::AutoPumpWidget.dart::_AutoPumpWidgetState"
+
+class "polsl_nsi_engineering_thesis::widget::DevicesListWidget.dart::DevicesListWidget" {
+  +State<DevicesListWidget> createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "polsl_nsi_engineering_thesis::widget::DevicesListWidget.dart::DevicesListWidget"
+
+class "polsl_nsi_engineering_thesis::widget::DevicesListWidget.dart::_DevicesListWidgetState" {
+  -List<String> _devices
+  +void initState()
+  -Future<void> _updateDevicesList()
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::State" <|-- "polsl_nsi_engineering_thesis::widget::DevicesListWidget.dart::_DevicesListWidgetState"
+
+class "polsl_nsi_engineering_thesis::widget::DeviceWidget.dart::DeviceWidget" {
+  +String device
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::StatelessWidget" <|-- "polsl_nsi_engineering_thesis::widget::DeviceWidget.dart::DeviceWidget"
+
+class "polsl_nsi_engineering_thesis::widget::HomepageWidget.dart::HomepageWidget" {
+  +String title
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::StatelessWidget" <|-- "polsl_nsi_engineering_thesis::widget::HomepageWidget.dart::HomepageWidget"
+
+class "polsl_nsi_engineering_thesis::widget::PumpWidget.dart::PumpWidget" {
+  +String device
+  +State<PumpWidget> createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "polsl_nsi_engineering_thesis::widget::PumpWidget.dart::PumpWidget"
+
+class "polsl_nsi_engineering_thesis::widget::PumpWidget.dart::_PumpWidgetState" {
+  -Curl _curl
+  -Pump _pump
+  +void initState()
+  +void deactivate()
+  +void dispose()
+  +void pumpGetCallback()
+  +Widget build()
+}
+
+"polsl_nsi_engineering_thesis::widget::PumpWidget.dart::_PumpWidgetState" o-- "polsl_nsi_engineering_thesis::helper::curl.dart::Curl"
+"polsl_nsi_engineering_thesis::widget::PumpWidget.dart::_PumpWidgetState" o-- "polsl_nsi_engineering_thesis::object::Pump.dart::Pump"
+"flutter::src::widgets::framework.dart::State" <|-- "polsl_nsi_engineering_thesis::widget::PumpWidget.dart::_PumpWidgetState"
+
+class "polsl_nsi_engineering_thesis::widget::SensorsWidget.dart::SensorsWidget" {
+  +String device
+  +State<SensorsWidget> createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "polsl_nsi_engineering_thesis::widget::SensorsWidget.dart::SensorsWidget"
+
+class "polsl_nsi_engineering_thesis::widget::SensorsWidget.dart::_SensorsWidgetState" {
+  -Curl _curl
+  -Timer _timer
+  -Moisture _moisture
+  -Humidity _humidity
+  -Temperature _temperature
+  +void initState()
+  -void _setTimer()
+  +void deactivate()
+  +void dispose()
+  +Widget build()
+}
+
+"polsl_nsi_engineering_thesis::widget::SensorsWidget.dart::_SensorsWidgetState" o-- "polsl_nsi_engineering_thesis::helper::curl.dart::Curl"
+"polsl_nsi_engineering_thesis::widget::SensorsWidget.dart::_SensorsWidgetState" o-- "dart::async::Timer"
+"polsl_nsi_engineering_thesis::widget::SensorsWidget.dart::_SensorsWidgetState" o-- "polsl_nsi_engineering_thesis::object::Moisture.dart::Moisture"
+"polsl_nsi_engineering_thesis::widget::SensorsWidget.dart::_SensorsWidgetState" o-- "polsl_nsi_engineering_thesis::object::Humidity.dart::Humidity"
+"polsl_nsi_engineering_thesis::widget::SensorsWidget.dart::_SensorsWidgetState" o-- "polsl_nsi_engineering_thesis::object::Temperature.dart::Temperature"
+"flutter::src::widgets::framework.dart::State" <|-- "polsl_nsi_engineering_thesis::widget::SensorsWidget.dart::_SensorsWidgetState"
+
+
+@enduml

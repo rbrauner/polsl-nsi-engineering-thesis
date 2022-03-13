@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="325px" preserveAspectRatio="none" style="width:633px;height:325px;background:#FFFFFF;" version="1.1" viewBox="0 0 633 325" width="633px" zoomAndPan="magnify"><defs><filter height="300%" id="f1c11vy1cgscps" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[813bed26f990902d76467a47d3a11f16]
+class HttpServer--><rect codeLine="3" fill="#FEFECE" filter="url(#f1c11vy1cgscps)" height="304.0938" id="HttpServer" style="stroke:#A80036;stroke-width:1.5;" width="348" x="9" y="7"/><ellipse cx="145.75" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M148.0938,18.6719 C147.1563,18.2344 146.5625,18.0938 145.6875,18.0938 C143.0625,18.0938 141.0625,20.1719 141.0625,22.8906 L141.0625,24.0156 C141.0625,26.5938 143.1719,28.4844 146.0625,28.4844 C147.2813,28.4844 148.4375,28.1875 149.1875,27.6406 C149.7656,27.2344 150.0938,26.7813 150.0938,26.3906 C150.0938,25.9375 149.7031,25.5469 149.2344,25.5469 C149.0156,25.5469 148.8125,25.625 148.625,25.8125 C148.1719,26.2969 148.1719,26.2969 147.9844,26.3906 C147.5625,26.6563 146.875,26.7813 146.1094,26.7813 C144.0625,26.7813 142.7656,25.6875 142.7656,23.9844 L142.7656,22.8906 C142.7656,21.1094 144.0156,19.7969 145.75,19.7969 C146.3281,19.7969 146.9375,19.9531 147.4063,20.2031 C147.8906,20.4844 148.0625,20.7031 148.1563,21.1094 C148.2188,21.5156 148.25,21.6406 148.3906,21.7656 C148.5313,21.9063 148.7656,22.0156 148.9844,22.0156 C149.25,22.0156 149.5156,21.875 149.6875,21.6563 C149.7969,21.5 149.8281,21.3125 149.8281,20.8906 L149.8281,19.4688 C149.8281,19.0313 149.8125,18.9063 149.7188,18.75 C149.5625,18.4844 149.2813,18.3438 148.9844,18.3438 C148.6875,18.3438 148.4844,18.4375 148.2656,18.75 L148.0938,18.6719 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="66" x="166.25" y="27.1543">HttpServer</text><line style="stroke:#A80036;stroke-width:1.5;" x1="10" x2="356" y1="39" y2="39"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="47"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="88" x="29" y="53.2104">request : String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="59.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="97" x="29" y="66.0151">response : String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="72.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="67" x="29" y="78.8198">DHT : dht11</text><line style="stroke:#A80036;stroke-width:1.5;" x1="10" x2="356" y1="85.4141" y2="85.4141"/><polygon fill="#FFFF44" points="20,91.4141,24,95.4141,20,99.4141,16,95.4141" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="113" x="29" y="99.6245">getMethod() : String</text><polygon fill="#FFFF44" points="20,104.2188,24,108.2188,20,112.2188,16,108.2188" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="288" x="29" y="112.4292">getNextQueryParam(String&amp; queryParams) : String</text><polygon fill="#FFFF44" points="20,117.0234,24,121.0234,20,125.0234,16,121.0234" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="311" x="29" y="125.2339">getQueryParamKey(const String&amp; queryParam) : String</text><polygon fill="#FFFF44" points="20,129.8281,24,133.8281,20,137.8281,16,133.8281" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="322" x="29" y="138.0386">getQueryParamValue(const String&amp; queryParam) : String</text><polygon fill="#FFFF44" points="20,142.6328,24,146.6328,20,150.6328,16,146.6328" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="249" x="29" y="150.8433">getQueryString(const String&amp; route) : String</text><polygon fill="#FFFF44" points="20,155.4375,24,159.4375,20,163.4375,16,159.4375" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="237" x="29" y="163.6479">getRawRoute(const String&amp; route) : String</text><polygon fill="#FFFF44" points="20,168.2422,24,172.2422,20,176.2422,16,172.2422" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="104" x="29" y="176.4526">getRoute() : String</text><polygon fill="#FFFF44" points="20,181.0469,24,185.0469,20,189.0469,16,185.0469" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="29" y="189.2573">checkDHT() : bool</text><polygon fill="#FFFF44" points="20,193.8516,24,197.8516,20,201.8516,16,197.8516" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="242" x="29" y="202.062">checkMehtod(const String&amp; method) : bool</text><polygon fill="#FFFF44" points="20,206.6563,24,210.6563,20,214.6563,16,210.6563" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="219" x="29" y="214.8667">checkRoute(const String&amp; route) : bool</text><polygon fill="#FFFF44" points="20,219.4609,24,223.4609,20,227.4609,16,223.4609" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="29" y="227.6714">isRequestEmtpy() : bool</text><polygon fill="#FFFF44" points="20,232.2656,24,236.2656,20,240.2656,16,236.2656" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="197" x="29" y="240.4761">waitForDHT(int maxTimeout) : bool</text><polygon fill="#FFFF44" points="20,245.0703,24,249.0703,20,253.0703,16,249.0703" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="218" x="29" y="253.2808">processGet(const String&amp; route) : void</text><polygon fill="#FFFF44" points="20,257.875,24,261.875,20,265.875,16,261.875" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="220" x="29" y="266.0854">processPost(const String&amp; route) : void</text><ellipse cx="20" cy="275.6797" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="134" x="29" y="278.8901">processRequest() : void</text><ellipse cx="20" cy="288.4844" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="116" x="29" y="291.6948">readRequest() : void</text><ellipse cx="20" cy="301.2891" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="127" x="29" y="304.4995">sendResponse() : void</text><!--MD5=[a95169970922befbaf60824f21aadd1a]
+class Pump--><rect codeLine="27" fill="#FEFECE" filter="url(#f1c11vy1cgscps)" height="240.0703" id="Pump" style="stroke:#A80036;stroke-width:1.5;" width="227" x="392.5" y="39"/><ellipse cx="485.75" cy="55" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M488.0938,50.6719 C487.1563,50.2344 486.5625,50.0938 485.6875,50.0938 C483.0625,50.0938 481.0625,52.1719 481.0625,54.8906 L481.0625,56.0156 C481.0625,58.5938 483.1719,60.4844 486.0625,60.4844 C487.2813,60.4844 488.4375,60.1875 489.1875,59.6406 C489.7656,59.2344 490.0938,58.7813 490.0938,58.3906 C490.0938,57.9375 489.7031,57.5469 489.2344,57.5469 C489.0156,57.5469 488.8125,57.625 488.625,57.8125 C488.1719,58.2969 488.1719,58.2969 487.9844,58.3906 C487.5625,58.6563 486.875,58.7813 486.1094,58.7813 C484.0625,58.7813 482.7656,57.6875 482.7656,55.9844 L482.7656,54.8906 C482.7656,53.1094 484.0156,51.7969 485.75,51.7969 C486.3281,51.7969 486.9375,51.9531 487.4063,52.2031 C487.8906,52.4844 488.0625,52.7031 488.1563,53.1094 C488.2188,53.5156 488.25,53.6406 488.3906,53.7656 C488.5313,53.9063 488.7656,54.0156 488.9844,54.0156 C489.25,54.0156 489.5156,53.875 489.6875,53.6563 C489.7969,53.5 489.8281,53.3125 489.8281,52.8906 L489.8281,51.4688 C489.8281,51.0313 489.8125,50.9063 489.7188,50.75 C489.5625,50.4844 489.2813,50.3438 488.9844,50.3438 C488.6875,50.3438 488.4844,50.4375 488.2656,50.75 L488.0938,50.6719 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="32" x="506.25" y="59.1543">Pump</text><line style="stroke:#A80036;stroke-width:1.5;" x1="393.5" x2="618.5" y1="71" y2="71"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="400.5" y="79"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="66" x="412.5" y="85.2104">_auto : bool</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="400.5" y="91.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="412.5" y="98.0151">working : bool</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="400.5" y="104.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="412.5" y="110.8198">autoMax : double</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="400.5" y="117.4141"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="412.5" y="123.6245">autoMin : double</text><line style="stroke:#A80036;stroke-width:1.5;" x1="393.5" x2="618.5" y1="130.2188" y2="130.2188"/><polygon fill="#FFFF44" points="403.5,136.2188,407.5,140.2188,403.5,144.2188,399.5,140.2188" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="124" x="412.5" y="144.4292">checkMoisture() : bool</text><ellipse cx="403.5" cy="154.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="88" x="412.5" y="157.2339">getAuto() : bool</text><ellipse cx="403.5" cy="166.8281" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="412.5" y="170.0386">getWorking() : bool</text><ellipse cx="403.5" cy="179.6328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="126" x="412.5" y="182.8433">getAutoMax() : double</text><ellipse cx="403.5" cy="192.4375" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="122" x="412.5" y="195.6479">getAutoMin() : double</text><ellipse cx="403.5" cy="205.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="114" x="412.5" y="208.4526">performAuto() : void</text><ellipse cx="403.5" cy="218.0469" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="412.5" y="221.2573">pumpOff() : void</text><ellipse cx="403.5" cy="230.8516" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="155" x="412.5" y="234.062">pumpOn(int duration) : void</text><ellipse cx="403.5" cy="243.6563" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="412.5" y="246.8667">setAuto(bool _auto) : void</text><ellipse cx="403.5" cy="256.4609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="201" x="412.5" y="259.6714">setAutoMax(double autoMax) : void</text><ellipse cx="403.5" cy="269.2656" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="193" x="412.5" y="272.4761">setAutoMin(double autoMin) : void</text><!--MD5=[cb73660f31185bafcbb06cf3bf76230b]
+@startuml
+/' Objects '/
+
+class HttpServer {
+	#getMethod() : String
+	#getNextQueryParam(String& queryParams) : String
+	#getQueryParamKey(const String& queryParam) : String
+	#getQueryParamValue(const String& queryParam) : String
+	#getQueryString(const String& route) : String
+	#getRawRoute(const String& route) : String
+	#getRoute() : String
+	-request : String
+	-response : String
+	#checkDHT() : bool
+	#checkMehtod(const String& method) : bool
+	#checkRoute(const String& route) : bool
+	#isRequestEmtpy() : bool
+	#waitForDHT(int maxTimeout) : bool
+	-DHT : dht11
+	#processGet(const String& route) : void
+	#processPost(const String& route) : void
+	+processRequest() : void
+	+readRequest() : void
+	+sendResponse() : void
+}
+
+
+class Pump {
+	-_auto : bool
+	#checkMoisture() : bool
+	+getAuto() : bool
+	+getWorking() : bool
+	-working : bool
+	-autoMax : double
+	-autoMin : double
+	+getAutoMax() : double
+	+getAutoMin() : double
+	+performAuto() : void
+	+pumpOff() : void
+	+pumpOn(int duration) : void
+	+setAuto(bool _auto) : void
+	+setAutoMax(double autoMax) : void
+	+setAutoMin(double autoMin) : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+@enduml
+
+@startuml
+
+class HttpServer {
+	#getMethod() : String
+	#getNextQueryParam(String& queryParams) : String
+	#getQueryParamKey(const String& queryParam) : String
+	#getQueryParamValue(const String& queryParam) : String
+	#getQueryString(const String& route) : String
+	#getRawRoute(const String& route) : String
+	#getRoute() : String
+	-request : String
+	-response : String
+	#checkDHT() : bool
+	#checkMehtod(const String& method) : bool
+	#checkRoute(const String& route) : bool
+	#isRequestEmtpy() : bool
+	#waitForDHT(int maxTimeout) : bool
+	-DHT : dht11
+	#processGet(const String& route) : void
+	#processPost(const String& route) : void
+	+processRequest() : void
+	+readRequest() : void
+	+sendResponse() : void
+}
+
+
+class Pump {
+	-_auto : bool
+	#checkMoisture() : bool
+	+getAuto() : bool
+	+getWorking() : bool
+	-working : bool
+	-autoMax : double
+	-autoMin : double
+	+getAutoMax() : double
+	+getAutoMin() : double
+	+performAuto() : void
+	+pumpOff() : void
+	+pumpOn(int duration) : void
+	+setAuto(bool _auto) : void
+	+setAutoMax(double autoMax) : void
+	+setAutoMin(double autoMin) : void
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml
+
+PlantUML version 1.2022.2beta1(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

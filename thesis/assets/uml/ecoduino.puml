@@ -1,0 +1,70 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class HttpServer {
+	#getMethod() : String
+	#getNextQueryParam(String& queryParams) : String
+	#getQueryParamKey(const String& queryParam) : String
+	#getQueryParamValue(const String& queryParam) : String
+	#getQueryString(const String& route) : String
+	#getRawRoute(const String& route) : String
+	#getRoute() : String
+	-request : String
+	-response : String
+	#checkDHT() : bool
+	#checkMehtod(const String& method) : bool
+	#checkRoute(const String& route) : bool
+	#isRequestEmtpy() : bool
+	#waitForDHT(int maxTimeout) : bool
+	-DHT : dht11
+	#processGet(const String& route) : void
+	#processPost(const String& route) : void
+	+processRequest() : void
+	+readRequest() : void
+	+sendResponse() : void
+}
+
+
+class Pump {
+	-_auto : bool
+	#checkMoisture() : bool
+	+getAuto() : bool
+	+getWorking() : bool
+	-working : bool
+	-autoMax : double
+	-autoMin : double
+	+getAutoMax() : double
+	+getAutoMin() : double
+	+performAuto() : void
+	+pumpOff() : void
+	+pumpOn(int duration) : void
+	+setAuto(bool _auto) : void
+	+setAutoMax(double autoMax) : void
+	+setAutoMin(double autoMin) : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml
